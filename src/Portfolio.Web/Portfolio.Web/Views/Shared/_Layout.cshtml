@@ -12,26 +12,27 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Portfolio.Web</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Ayşenur Küçük</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="About" asp-action="Index">About</a>
+                            <a class="nav-link" asp-controller="About" asp-action="Index">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Projects" asp-action="Index">Projects</a>
+                            <a class="nav-link" asp-controller="Projects" asp-action="Index">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Contact" asp-action="Index">Contact</a>
+                            <a class="nav-link" asp-controller="Contact" asp-action="Index">Contact</a>
                         </li>
                     </ul>
 
                     <div class="ms-auto d-flex align-items-center">
-                        <button id="themeToggle" class="btn btn-sm btn-outline-secondary" type="button">
+                        <button id="themeToggle" class="btn btn-sm btn-outline-secondary" type="button" aria-label="Toggle theme">
                             🌞 / 🌙
                         </button>
                     </div>
@@ -46,9 +47,14 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - Portfolio.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="border-top py-3 mt-auto">
+        <div class="container d-flex justify-content-between align-items-center small">
+            <div>© @DateTime.Now.Year — Ayşenur Küçük</div>
+            <div class="d-flex gap-3">
+                <a class="link-secondary" href="https://github.com/aysenurkucuk45" target="_blank" rel="noopener">GitHub</a>
+                <a class="link-secondary" href="https://www.linkedin.com/in/aysenurkucuk45/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="link-secondary" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
         </div>
     </footer>
 
