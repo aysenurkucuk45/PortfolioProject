@@ -20,3 +20,91 @@ html {
 body {
   margin-bottom: 60px;
 }
+    /* ===== Dark Mode ===== */
+    body.dark {
+        background-color: #121212;
+        color: #e6e6e6;
+    }
+
+        /* linkler */
+        body.dark a {
+            color: #9ecbff;
+        }
+
+            body.dark a:hover {
+                color: #c6e2ff;
+            }
+
+        /* navbar & menü */
+        body.dark .navbar {
+            background-color: #1a1a1a !important;
+        }
+
+            body.dark .navbar .navbar-brand,
+            body.dark .navbar .nav-link {
+                color: #e6e6e6 !important;
+            }
+
+        body.dark .nav-link.text-dark {
+            color: #e6e6e6 !important;
+        }
+        /* text-dark'ý bastýr */
+        body.dark .bg-white,
+        body.dark .bg-light {
+            background-color: #1e1e1e !important;
+        }
+
+        /* kartlar, kenarlýklar, footer */
+        body.dark .card {
+            background: #1f1f1f;
+            color: #e6e6e6;
+            border-color: #2a2a2a;
+        }
+
+        body.dark .border,
+        body.dark .border-top,
+        body.dark .border-bottom {
+            border-color: #2a2a2a !important;
+        }
+
+        body.dark .footer.text-muted {
+            color: #aaaaaa !important;
+            background: #1a1a1a;
+        }
+
+        /* butonlar & formlar */
+        body.dark .btn-outline-secondary {
+            color: #e6e6e6;
+            border-color: #666;
+        }
+
+        body.dark .btn-primary {
+            background: #3b82f6;
+            border-color: #3b82f6;
+        }
+
+        body.dark .form-control,
+        body.dark .form-select {
+            background: #1f1f1f;
+            color: #e6e6e6;
+            border-color: #2a2a2a;
+        }
+
+            body.dark .form-control::placeholder {
+                color: #aaaaaa;
+            }
+
+        /* hamburger ikon görünürlüðü */
+        body.dark .navbar-toggler {
+            border-color: #666;
+        }
+
+        body.dark .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+/* yumuþak geçiþ */
+body, .card, .navbar, .footer, .form-control, .form-select {
+    transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+

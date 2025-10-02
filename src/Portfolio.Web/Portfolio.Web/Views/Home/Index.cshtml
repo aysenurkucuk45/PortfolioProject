@@ -1,8 +1,16 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Welcome";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="py-5 mb-4 bg-light rounded-3">
+    <div class="container py-5">
+        <h1 class="display-5 fw-bold">Merhaba, ben Ayşenur 👋</h1>
+        <p class="col-md-8 fs-5">
+            .NET ekosisteminde web uygulamaları geliştiriyorum: C#, ASP.NET MVC/Core, SQL Server.
+            Aşağıdan projelerime ve iletişim bilgilerime ulaşabilirsin.
+        </p>
+        <div class="d-flex gap-2">
+            <a class="btn btn-primary btn-lg" asp-controller="Projects" asp-action="Index">Projeler</a>
+            <a class="btn btn-outline-secondary btn-lg" asp-controller="Contact" asp-action="Index">İletişim</a>
+        </div>
+    </div>
 </div>
