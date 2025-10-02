@@ -1,5 +1,48 @@
 ﻿@{
     ViewData["Title"] = "About";
 }
-<h1>About</h1>
-<p>Kısa biyografi ve yetenekler burada olacak.</p>
+<div class="row g-4">
+    <div class="col-12">
+        <h1 class="mb-3">About</h1>
+        <p class="lead">
+            Bilgisayar Programcılığı mezunuyum. .NET ekosisteminde web uygulamaları geliştiriyorum
+            (C#, ASP.NET MVC/Core, SQL Server). Temiz kod, sürüm kontrol ve kullanıcı odaklı tasarım benim için önemli.
+        </p>
+    </div>
+
+    <div class="col-12 col-lg-6">
+        <div class="card shadow-sm h-100">
+            <div class="card-body">
+                <h5 class="card-title mb-3">Yetenekler</h5>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-primary">C#</span>
+                    <span class="badge bg-primary">ASP.NET MVC</span>
+                    <span class="badge bg-primary">ASP.NET Core</span>
+                    <span class="badge bg-dark">SQL Server</span>
+                    <span class="badge bg-success">Entity Framework</span>
+                    <span class="badge bg-info text-dark">Bootstrap</span>
+                    <span class="badge bg-secondary">Git & GitHub</span>
+                    <span class="badge bg-warning text-dark">Chart.js</span>
+                    <span class="badge bg-secondary">ParamQuery</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-6">
+        <div class="card shadow-sm h-100">
+            <div class="card-body">
+                <h5 class="card-title mb-3">Araçlar</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Visual Studio, VS Code</li>
+                    <li class="list-group-item">SQL Server & SSMS</li>
+                    <li class="list-group-item">GitHub Desktop / Git Bash</li>
+                    <li class="list-group-item">Postman, Swagger (API test)</li>
+                </ul>
+            </div>
+            <div class="card-footer bg-transparent">
+                <a class="btn btn-outline-secondary btn-sm" href="~/assets/CV.pdf" target="_blank">CV (PDF)</a>
+            </div>
+        </div>
+    </div>
+</div>
